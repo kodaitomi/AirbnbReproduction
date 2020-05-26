@@ -1,3 +1,7 @@
+.wrap {
+  overflow: hidden;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -48,15 +52,15 @@ line-height: 60px;
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   margin:0 auto;
   /* text-align: center; */
 }
 
-.fil-container {
+/* .fil-container {
   width: 400px;
   background-color: white;
-}
+} */
 .top-message {
   padding: 70px 0 0 0 ;
   color: white;
@@ -100,4 +104,42 @@ line-height: 60px;
     width: 1032px;
     margin: 100px auto;
   }
+}
+
+@media screen and (max-width:769px) {
+  .flex {
+    width: 100%;
+  }
+  .flex-p {
+    display: none;
+  }
+  .fillout {
+    width: 100%;
+  }
+  .fillout > div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:770px) {
+  .fillout {
+  width:696px
+  }
+  .fillout > div {
+    width:696px;
+  }
+  .flex-sel {
+    width:61%
+  }
+  .flex-sel2 {
+    width: 36%;
+  }
+}
+
+@media screen and (max-width:575) {
+
+}
+
+@media screen and (min-width:576) {
+
 }
