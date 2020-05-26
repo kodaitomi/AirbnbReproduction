@@ -1,0 +1,103 @@
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+  z-index: 20;
+  top: 0px;
+}
+.header-left {
+transition: all 0.5s;
+background-color: rgba(255, 255, 255, 0.3);
+line-height: 60px;
+}
+.header-left svg {
+  float: left;
+  margin:20px;
+  display: block;
+}
+.header-left a {
+  padding: 8px;
+  margin: auto 8px;
+  font-size: 15px;
+  display: block;
+  float: left;
+  color: #555;
+  font-weight:bold;
+}
+.header-right {
+  float: right;
+  margin: auto 0;
+}
+
+.top-wrapper {
+  height: 260px;
+
+  display: flex;
+  padding:100px 0 100px 0;
+  background-image: linear-gradient(transparent,transparent,rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(./images/airbnb1.jpg);
+  background-size: cover;
+
+}
+.top-wrapper-xl {
+  margin-top: 80px;
+  height: 600px;
+  /* display: flex; */
+  background-image: url(./images/airbnb1.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 1170px;
+  margin:0 auto;
+  /* text-align: center; */
+}
+
+.fil-container {
+  width: 400px;
+  background-color: white;
+}
+.top-message {
+  padding: 70px 0 0 0 ;
+  color: white;
+  font-size:30px;
+  font-weight: 550;
+
+}
+.border {
+  border-top: solid 3px #555;
+  width: 70px;
+}
+.check-btn {
+  padding: 10px 15px;
+  border: solid 2px #555;
+}
+.mark {
+  font-size: 30px;
+  background-color: white;
+}
+
+
+@media screen and (max-width:1199px) {
+  .container-text {
+    width: 536px;
+    margin: 0 auto;
+  }
+  .container-column {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+
+
+}
+@media screen and (min-width:1200px) {
+  .container-text {
+    width: 1032px;
+    margin: 100px auto;
+  }
+  .container-column {
+    width: 1032px;
+    margin: 100px auto;
+  }
+}
