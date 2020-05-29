@@ -35,7 +35,7 @@ line-height: 60px;
 }
 
 .top-wrapper {
-  height: 260px;
+
 
   display: flex;
   padding:100px 0 100px 0;
@@ -49,6 +49,7 @@ line-height: 60px;
   /* display: flex; */
   background-image: url(./images/airbnb1.jpg);
   background-size: cover;
+  background-image: linear-gradient(transparent,transparent,rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(./images/airbnb1.jpg);
 }
 
 .container {
@@ -61,16 +62,17 @@ line-height: 60px;
   width: 400px;
   background-color: white;
 } */
+
+
 .top-message {
-  padding: 70px 0 0 0 ;
-  color: white;
-  font-size:30px;
-  font-weight: 550;
+
 
 }
-.border {
-  border-top: solid 3px #555;
+
+.borders {
+  border-top: solid 2px #767676;
   width: 70px;
+  padding-bottom: 20px;
 }
 .check-btn {
   padding: 10px 15px;
@@ -81,17 +83,27 @@ line-height: 60px;
   background-color: white;
 }
 
+.row > h1 {
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+li {
+  padding: 10px 0;
+}
 
 @media screen and (max-width:1199px) {
   .container-text {
-    width: 536px;
+    width: 600px;
     margin: 0 auto;
   }
   .container-column {
     width: 648px;
     margin: 0 auto;
   }
-
+  .hosting {
+    margin-top: 50px;
+  }
 
 
 }
@@ -119,6 +131,14 @@ line-height: 60px;
   .fillout > div {
     width: 100%;
   }
+  .top-message {
+    font-size: 27px;
+
+  }
+  .top-wrapper {
+    height: 260px;
+  }
+
 }
 
 @media screen and (min-width:770px) {
@@ -134,12 +154,28 @@ line-height: 60px;
   .flex-sel2 {
     width: 36%;
   }
+  .top-message {
+    font-size: 40px;
+  }
+  .top-wrapper {
+    height: 300px;
+  }
+  .row > h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width:575) {
+@media screen and (max-width:575px) {
+.borders {
+  text-align: left;
+}
+
 
 }
 
-@media screen and (min-width:576) {
-
+@media screen and (min-width:576px) {
+.borders {
+  margin: 0 auto;
+}
 }
