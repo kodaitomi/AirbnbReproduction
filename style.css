@@ -2,6 +2,9 @@
   overflow: hidden;
 }
 
+.isHidden {
+  display: none;
+}
 header {
   position: fixed;
   width: 100%;
@@ -37,7 +40,7 @@ line-height: 60px;
 .top-wrapper {
 
 
-  display: flex;
+  /* display: flex; */
   padding:100px 0 100px 0;
   background-image: linear-gradient(transparent,transparent,rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(./images/airbnb1.jpg);
   background-size: cover;
@@ -79,8 +82,13 @@ line-height: 60px;
   border: solid 2px #555;
 }
 .mark {
-  font-size: 30px;
+  font-size: 80px;
   background-color: white;
+  font-family: circular;
+  color: #FDB32B;
+  font-weight: bold;
+  padding: 0;
+  height: 70px;
 }
 
 .row > h1 {
@@ -88,12 +96,118 @@ line-height: 60px;
   font-weight: bold;
 }
 
-li {
+/* li {
   padding: 10px 0;
+} */
+.list {
+
+  border-bottom: 1px solid #76767630;
+  padding:20px;
 }
 
+.list-item {
+  color: #008489;
+  margin: 20px;
+ }
+
+.hosting-detail-list div{
+  /* width: 600px; */
+  float: left;
+}
+
+.medium-hosting div{
+  float: left;
+}
+.medium-hosting2 div{
+  float: left;
+}
+
+.bottom-wrapper {
+
+  /* width: 100%; */
+  height: 400px;
+  margin-top: 100px;
+  background-image:url(./images/airbnb8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+.bottom-wrapper-m div{
+float: left;
+width: 250px;
+margin:0 10px;
+}
+.listing-btn {
+  padding: 10px 15px;
+  color: black;
+  background-color: white;
+}
+
+.step > h2{
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer {
+  height: 80px;
+}
+
+.footer-left {
+float: left;
+width: 600px;
+}
+.footer-left div {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+.three p {
+  float: left;
+}
+.footer-link div{
+  float: initial;
+}
+
+.bottom-list div > a{
+  color: rgb(118, 118, 118);
+  font-weight: bold;
+  font-size: 14px;
+}
+.bottom-list div {
+  width: 100%;
+}
+
+.bottom-lists div {
+  float: left;
+}
+
+
+
+
+
 @media screen and (max-width:1199px) {
-  .container-text {
+
+  .hosting {
+    margin-top: 50px;
+  }
+  .host-title {
+    width:600px;
+    margin:0 auto;
+  }
+
+}
+@media screen and (min-width:1200px) {
+
+}
+
+@media screen and (max-width:1127px) {
+
+.container-text {
     width: 600px;
     margin: 0 auto;
   }
@@ -101,13 +215,35 @@ li {
     width: 648px;
     margin: 0 auto;
   }
-  .hosting {
-    margin-top: 50px;
-  }
 
+.hoster{
+  font-size: 20px;
+  color: #484848;
+  font-weight: lighter;
+}
+.hoster-p{
+  font-size: 13px; color: #484848ab;
+}
+h1 {
+  font-size: 40px;
+}
+.bottom-wrapper > div {
+  margin:0 auto;
+}
+.income {
+  font-size: 40px;
+}
+/* .men-pic {
+  height: 339px;
+} */
+.pic-2 {
+  width: 339px;
 
 }
-@media screen and (min-width:1200px) {
+
+}
+
+@media screen and (min-width:1128px) {
   .container-text {
     width: 1032px;
     margin: 100px auto;
@@ -116,9 +252,48 @@ li {
     width: 1032px;
     margin: 100px auto;
   }
+.hoster{
+  font-size: 30px;
+  color: #484848;
+  font-weight: lighter;
+}
+.hoster-p{
+  font-size: 17px; color: #484848ab;
+}
+h1 {
+  font-size: 55px;
+}
+.bottom-wrapper-m div{
+float: left;
+width: 350px;
+margin:0 10px;
+}
+
+.bottom-wrapper-m > div{
+  margin-left: 50px;
+}
+.income {
+  font-size: 55px;
+}
+/* .men-pic {
+  height: 531px;
+} */
+.pic-2 {
+  width: 500px;
+}
 }
 
 @media screen and (max-width:769px) {
+  .container {
+    width: 90%;
+  }
+  .container-text {
+    width: 90%;
+  }
+  .container-column {
+    width: 90%;
+
+  }
   .flex {
     width: 100%;
   }
@@ -139,6 +314,19 @@ li {
     height: 260px;
   }
 
+  .medium-hosting {
+    display: none;
+  }
+
+  .footer-left {
+    width: 90%;
+  }
+  /* .men-pic {
+    height: 1000px;
+  }
+  .men-pic-2 {
+    height: 661.5px;
+  } */
 }
 
 @media screen and (min-width:770px) {
@@ -164,13 +352,30 @@ li {
     margin: 0 auto;
     text-align: center;
   }
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .borders {
+    padding-bottom: 30px;
+  }
+  /* .hoster {
+    font-size: 35px;
+  }
+  .hoster-p {
+    font-size: 20px;
+  } */
+
+
 }
 
 @media screen and (max-width:575px) {
 .borders {
   text-align: left;
 }
+.bottom-wrapper {
 
+}
 
 }
 
@@ -178,4 +383,7 @@ li {
 .borders {
   margin: 0 auto;
 }
+
+
+
 }
